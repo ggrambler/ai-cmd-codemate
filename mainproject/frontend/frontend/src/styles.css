@@ -1,0 +1,94 @@
+:root {
+  --bg: #0b0e14;
+  --panel: #111625;
+  --ink: #e6e6e6;
+  --muted: #9aa0a6;
+  --accent: #5ee0a0;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 16px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.header .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+.chat {
+  background: var(--panel);
+  border-radius: 12px;
+  padding: 16px;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+}
+.log {
+  flex: 1;
+  overflow: auto;
+  padding-right: 4px;
+}
+.msg {
+  white-space: pre-wrap;
+  padding: 6px 8px;
+  border-radius: 8px;
+  margin: 6px 0;
+}
+.msg.user {
+  background: #1a2137;
+}
+.msg.bot {
+  background: #0f1424;
+}
+.prompt {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+.prompt input {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #2a334b;
+  background: #0f1424;
+  color: var(--ink);
+}
+.prompt button {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #2a334b;
+  background: #162036;
+  color: var(--ink);
+  cursor: pointer;
+}
+.hint {
+  color: var(--muted);
+  font-size: 12px;
+  margin-top: 6px;
+}
+kbd {
+  background: #0b1222;
+  border: 1px solid #24304f;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+.suggestion {
+  color: var(--muted);
+  font-size: 12px;
+}
