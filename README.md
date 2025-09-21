@@ -3,6 +3,8 @@
 A self-contained virtual terminal that mimics a Unix-like shell over a **tree-based, in-memory filesystem**.
 Safe by design (no real disk access). React “chat” UI with history and TAB autocompletion.
 
+Video demo: [Youtube video demo.](https://youtu.be/DBBwiSoarF4)
+
 ---
 
 ## Features
